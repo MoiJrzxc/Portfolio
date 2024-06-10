@@ -476,14 +476,78 @@ input:focus {
   box-shadow: 0 0 0 .15vw skyblue;
 }
 /*-------- PnC PHILOSOPHY AND OBJECTIVESs ----------*/
-#philosopy{
+#philosophy {
   display: grid;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  grid-template-columns: 1fr;
+  gap: 20px;
   margin-bottom: 50px;
+  padding: 20px;
+  background: linear-gradient(to right, #2e2e2d 0%, rgb(158, 21, 21) 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-#philosopy .container{
+#philosophy .sub-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #dbe3ea;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+#philosophy .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+#philosophy .row {
+  background: #3a3a3a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(237, 233, 233, 0.959);
+  animation: slideIn 1.5s ease-out;
+}
+
+#philosophy .head {
+  font-size: 2em;
+  color: #f2745b;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+#philosophy .head::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background: #ea5842;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+#philosophy .content {
+  font-size: 1.2em;
+  color: #fcfbfb;
+  line-height: 1.6;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 
