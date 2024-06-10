@@ -1,0 +1,441 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: myfont;
+  src: url(fonts/introrust.otf);
+}
+
+body{
+    background: rgb(37, 37, 37);
+    font-family: myfont;
+    
+  }
+
+#header{
+  height: 100vh;
+  background-image: url(images/background\(1\).gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.container{
+  padding: 10px 10%;
+}
+
+nav {
+    background-color: #1c1e21;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover{
+    background-color: #444;
+    color: #AD0000;
+}
+
+  .header-text {
+    font-weight: bold;
+    font-size: 45px;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: auto;
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+.header-text p{
+    font-size: 30px;
+    color:#ffffff;
+    margin-bottom: 0%;
+  }
+
+.header-text h1 span{
+    color: #AD0000;
+  }
+
+.header-text h1{
+   margin-top: 0%;
+}
+
+ 
+  /* --------------ABOUT ME------------- */
+
+#about{
+  padding: 80px 80px;
+  color: #ffffff;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.about-col-1{
+  flex-basis: 35%;
+  overflow: hidden;
+}
+
+.about-col-1 img{
+  width: 70%;
+  border-radius: 15px;
+}
+
+.about-col-1 > img{
+  filter: grayscale(1);
+  transition: scale 750ms ease-out,
+  filter 250ms ease-in-out;
+}
+
+.about-col-1:hover > img {
+  scale: 1.15;
+  filter: grayscale(0);
+  border-radius: 15px;
+}
+
+.about-col-2{
+  flex-basis: 60%;
+}
+
+.sub-title{
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.about-col-2 p{
+  opacity: 70%;
+}
+
+.tab-titles{
+  display: flex;
+  margin: 10px 0 30px;
+}
+
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+} 
+
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #AD0000;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+  width: 50%;
+}
+
+.tab-contents ul{
+  padding-left: 0%;
+}
+
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span{
+  color: #AD0000;
+  font-size: 14px;
+  
+}
+
+.tab-contents{
+  display: none;
+}
+
+.tab-contents.active-tab{
+  display: block;
+}
+
+/*-------- Activities  ----------*/
+
+#activities{
+  padding: 30px 0 ;
+  margin-bottom: 50px;
+}
+
+.activities-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 20px;
+}
+
+.activities-list div{
+  background-color: #535353;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 5%;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.activities-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.activities-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.activities-list div a{
+  text-decoration: underline;
+  color: white;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.activities-list div:hover{
+  background: #ff004f ;
+  transform: translateY(-10px);
+}
+
+/*-------- Documentation ----------*/
+.picture-title {
+  font-size: 60px;
+  margin: auto;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.container-card {
+  width: 100%;
+  width: auto;
+  height: 340px;
+  display: flex;
+  gap: 10px;
+  margin-inline: 50px;
+  margin-bottom: 50px;
+}
+
+.card {
+  min-width: 70px;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  transition: flex-grow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+
+  --transition-timing: 0.35s;
+}
+.card:hover {
+  flex-grow: 7;
+}
+
+.card > .background {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.4);
+  z-index: -1;
+  transition: var(--transition-timing) ease;
+}
+
+.card:hover > .background {
+  filter: brightness(1);
+}
+
+.card > .card-content {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 20px;
+  overflow: hidden;
+  transition: var(--transition-timing);
+  z-index: 10;
+}
+.card:hover > .card-content {
+  inset: 20px;
+  top: auto;
+}
+
+.card-content > * {
+  transition: var(--transition-timing);
+}
+
+.card-content > .profile-image {
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.card:hover .profile-image {
+  border: 1px solid rgb(255, 145, 101);
+}
+.profile-image > svg {
+  stroke: #fefefe;
+}
+.card:hover .profile-image > svg {
+  stroke: rgb(255, 145, 101);
+}
+
+.card-content > .title {
+  white-space: pre;
+  margin-left: 10px;
+  translate: 0 100%;
+  opacity: 0;
+}
+.card:hover .title {
+  opacity: 1;
+  translate: 0 0;
+}
+
+.card > .backdrop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  z-index: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+}
+
+
+/* -------------Contact------------ */
+
+.contact-left{
+  flex-basis: 35%;
+}
+
+.contact-right{
+  flex-basis: 60%;
+}
+
+.contact-left p{
+  margin-top: 30px;
+}
+
+.contact-left p i{
+  color: red;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icon{
+  margin-top: 30px;
+}
+
+.social-icon a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  transition: trasnform 0.5s;
+}
+
+.social-icon a:hover{
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.btn.btn2{
+  display: inline-block;
+  background: red;
+}
+
+.contact-right form{
+  width: 100%;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #414141;
+  margin: 15px 0;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+
+}
+
+/*-------- PnC PHILOSOPHY AND OBJECTIVESs ----------*/
+#philosopy{
+  display: grid;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+#philosopy .container{
+}
+
+
