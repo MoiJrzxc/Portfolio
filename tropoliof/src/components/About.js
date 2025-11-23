@@ -12,7 +12,7 @@ export default function About() {
           </div>
           <div className="about-col-2">
             <h1 className="sub-title">About me</h1>
-            <p>Hi, I’m Moises Fatal Jr., a passionate and driven computer science student with a strong interest in programming, cloud technologies, and project management. I enjoy turning ideas into practical solutions and continuously learning new skills to tackle challenges creatively. Beyond academics, I have experience leading teams and organizing projects, which has strengthened my collaboration and problem-solving abilities.</p>
+            <p className="about-paragraph">Hi, I’m Moises Fatal Jr., a passionate and driven computer science student with a strong interest in programming, cloud technologies, and project management. I enjoy turning ideas into practical solutions and continuously learning new skills to tackle challenges creatively. Beyond academics, I have experience leading teams and organizing projects, which has sstrengthened my collaboration and problem-solving abilities.</p>
 
             <div className="tab-titles">
               <p className={`tab-links ${tab === 'skills' ? 'active-link' : ''}`} onClick={() => setTab('skills')}>Skills</p>
@@ -23,7 +23,7 @@ export default function About() {
             <div className={`tab-contents ${tab === 'skills' ? 'active-tab' : ''}`} id="skills">
               <ul>
                 <li>
-                  <span>Programming</span><br />Java
+                  <span>Programming</span><br />Java, Python, JavaScript
                 </li>
                 <li>
                   <span>Web Development</span><br />HTML/CSS
