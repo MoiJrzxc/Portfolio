@@ -3,8 +3,9 @@ import './App.css';
 import Nav from './components/Nav';
 import HeaderSection from './components/HeaderSection';
 import About from './components/About';
-import Activities from './components/Activities';
-import Documentation from './components/Documentation';
+// Activities removed per user request
+import Documentation from './components/Documentation'
+import Projects from './components/Projects';
 import Philosophy from './components/Philosophy';
 import Contact from './components/Contact';
 
@@ -15,7 +16,7 @@ function App() {
       <HeaderSection />
       <main>
         <About />
-        <Activities />
+        <Projects />
         <Documentation />
         <Philosophy />
         <Contact />
