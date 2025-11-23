@@ -1,38 +1,20 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    scroll-behavior: smooth;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
-/* @font-face {
+@font-face {
   font-family: myfont;
-  src: url('/fonts/introrust.otf') format('opentype');
-} */
+  src: url('fonts/introrust.otf') format('opentype');
+}
 
 body {
   background: rgb(37, 37, 37);
@@ -41,7 +23,7 @@ body {
 
 #header {
   height: 100vh;
-  background-image: url('background(1).gif');
+  background-image: url('background.gif');
   background-size: cover;
   background-position: center;
 }
@@ -256,6 +238,7 @@ nav ul li a:hover {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
+  color: white;
 }
 
 .activities-list div a {
@@ -402,6 +385,7 @@ img {
 
 .contact-left {
   flex-basis: 35%;
+  color: white;
 }
 
 .contact-right {

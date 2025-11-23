@@ -12,7 +12,7 @@ export default function About() {
           </div>
           <div className="about-col-2">
             <h1 className="sub-title">About me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eum dolorum quidem, inventore enim, harum itaque voluptas quasi minus aliquam sequi eaque pariatur ducimus dolore.</p>
+            <p>Hi, I’m Moises Fatal Jr., a passionate and driven computer science student with a strong interest in programming, cloud technologies, and project management. I enjoy turning ideas into practical solutions and continuously learning new skills to tackle challenges creatively. Beyond academics, I have experience leading teams and organizing projects, which has strengthened my collaboration and problem-solving abilities.</p>
 
             <div className="tab-titles">
               <p className={`tab-links ${tab === 'skills' ? 'active-link' : ''}`} onClick={() => setTab('skills')}>Skills</p>
