@@ -34,7 +34,7 @@ export default function About() {
               </ul>
             </div>
 
-            <div className={`tab-contents ${tab === 'experience' ? 'active-tab' : ''}`} id="experience">
+            <div className={`tab-contents ${tab === 'experience' ? 'active-tab' : ''}`} id="exience">
               <ul>
                 <li>
                   <span>Participant</span><br />AWS Cloud Club Inauguration and Cloud Computing Seminar
